@@ -1,0 +1,33 @@
+{
+    "firstName":"Janna",
+    "lastName":"Armstrong",
+    "phone":"+380221234567",
+    "email":"j.arm@i.ua",
+    "password":"12345678",
+    "address1":"25, st.Naukova",
+    "address2": "11, st.Cheremshyny",
+    "city": "Lviv",
+    "state":"Lviv",
+    "country": "UKRAINE",
+    "postalCode": "79000",
+    "flightType": "roundtrip",
+    "departureFrom": "London",
+    "arrivalTo": "Paris",
+    "departureMonth": "November",
+    "returningMonth": "November",
+    "departureDay": "7",
+    "returningDay":"12",
+    "passengerCount":"1",
+    "flightClass":"Business",
+    "airlines":"Blue Skies Airlines",
+    "chosenDepart":"Blue Skies Airlines$361$271$7:10",
+    "chosenReturn":"Blue Skies Airlines$631$273$14:30",
+    "meal":"Kosher",
+    "cardType":"Visa",
+    "cardNumber":"1234567890123456",
+    "yearOfExpiration":"2010",
+    "monthOfExpiration":"12"
+
+
+
+}

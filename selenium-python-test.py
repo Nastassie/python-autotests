@@ -24,43 +24,43 @@ class MercuryToursTest(unittest.TestCase):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         
-   # def test_Registration(self):
-   #    
-   #     browser=self.driver
-   #     registration_page = RegistrationPage(driver=browser)
-   #     
-   #     registration_page.go()
-   #     registration_page.firstName_input.input_text(self.data['firstName'])
-   #     registration_page.lastName_input.input_text(self.data['lastName'])
-   #     registration_page.phone_input.input_text(self.data['phone'])
-   #     registration_page.email_input.input_text(self.data['email'])
-   #     registration_page.address1_input.input_text(self.data['address1'])
-   #     registration_page.address2_input.input_text(self.data['address2'])
-   #     registration_page.city_input.input_text(self.data['city'])
-   #     registration_page.state_input.input_text(self.data['state'])
-   #     registration_page.postalCode_input.input_text(self.data['postalCode'])
-   #     registration_page.country_selection.select(self.data['country'])
-   #     registration_page.userName_input.input_text(self.data['email'])
-   #     registration_page.password_input.input_text(self.data['password'])
-   #     registration_page.confirmPassword_input.input_text(self.data['password'])
-   #     registration_page.submit_button.click()
-   #    
-   #     current_url = urlparse(browser.current_url)
-   #     result = '{uri.scheme}://{uri.netloc}{uri.path}'.format(uri=current_url)
-   #     
-   #     assert result == 'http://newtours.demoaut.com/create_account_success.php', "Unexpected URL"
-#
-   #     sign_in_page = SignInPage(driver=browser)
-   #     sign_in_page.go()
-   #     sign_in_page.userName_input.input_text(self.data['email'])
-   #     sign_in_page.password_input.input_text(self.data['password'])
-   #     sign_in_page.submit_button.click()
-#
-   #     current_url = urlparse(browser.current_url)
-   #     result = '{uri.scheme}://{uri.netloc}{uri.path}'.format(uri=current_url)
-   #     
-   #     assert result == 'http://newtours.demoaut.com/mercuryreservation.php', "Unexpected URL"
-#
+   def test_Registration(self):
+      
+       browser=self.driver
+       registration_page = RegistrationPage(driver=browser)
+       
+       registration_page.go()
+       registration_page.firstName_input.input_text(self.data['firstName'])
+       registration_page.lastName_input.input_text(self.data['lastName'])
+       registration_page.phone_input.input_text(self.data['phone'])
+       registration_page.email_input.input_text(self.data['email'])
+       registration_page.address1_input.input_text(self.data['address1'])
+       registration_page.address2_input.input_text(self.data['address2'])
+       registration_page.city_input.input_text(self.data['city'])
+       registration_page.state_input.input_text(self.data['state'])
+       registration_page.postalCode_input.input_text(self.data['postalCode'])
+       registration_page.country_selection.select(self.data['country'])
+       registration_page.userName_input.input_text(self.data['email'])
+       registration_page.password_input.input_text(self.data['password'])
+       registration_page.confirmPassword_input.input_text(self.data['password'])
+       registration_page.submit_button.click()
+      
+       current_url = urlparse(browser.current_url)
+       result = '{uri.scheme}://{uri.netloc}{uri.path}'.format(uri=current_url)
+       
+       assert result == 'http://newtours.demoaut.com/create_account_success.php', "Unexpected URL"
+
+       sign_in_page = SignInPage(driver=browser)
+       sign_in_page.go()
+       sign_in_page.userName_input.input_text(self.data['email'])
+       sign_in_page.password_input.input_text(self.data['password'])
+       sign_in_page.submit_button.click()
+
+       current_url = urlparse(browser.current_url)
+       result = '{uri.scheme}://{uri.netloc}{uri.path}'.format(uri=current_url)
+       
+       assert result == 'http://newtours.demoaut.com/mercuryreservation.php', "Unexpected URL"
+
     def test_FlightBooking(self):
        
         browser=self.driver
